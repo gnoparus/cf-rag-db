@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@cloudflare/ai": "^1.0.47",
+    "hono": "^3.11.11"
   }
 }

@@ -2,6 +2,19 @@ name = "cf-rag-db"
 main = "src/index.js"
 compatibility_date = "2023-12-18"
 
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "DB"                                       # i.e. available in your Worker on env.DB
+database_name = "cf-rag-db101"
+database_id = "2017e88c-4c5b-4ce4-a9b8-2aa2a8bf9773"
+
+[[vectorize]]
+binding = "VECTORIZE_INDEX"  # available within your Worker on env.VECTORIZE_INDEX
+index_name = "cf-rag-vec101"
+
+
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables
